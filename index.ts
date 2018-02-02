@@ -4,7 +4,7 @@ interface ITest {
 }
 
 // This code should be prettied
-const testObj = {
+const testObj: ITest = {
   str: "Hello",
   num: 5
 };

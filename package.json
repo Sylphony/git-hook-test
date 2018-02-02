@@ -7,12 +7,17 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "pretty": "prettier index.ts",
-    "build": "tsc index.ts",
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.ts": ["prettier --write", "git add"]
+    "*.ts": [
+      "prettier --write", 
+      "tsc",
+      "git add"
+    ],
+    "*.js": [
+      "git add"
+    ]
   },
   "devDependencies": {
     "husky": "0.14.3",
