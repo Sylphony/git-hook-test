@@ -9,4 +9,6 @@ const testObj: ITest = {
   num: 5
 };
 
-console.log(testObj);
+const testStr = "world";
+
+console.log(testObj, testStr);
