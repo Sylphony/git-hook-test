@@ -1,0 +1,16 @@
+{
+  "name": "git-hook-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": " ",
+  "author": " ",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "pretty": "prettier index.js"
+  },
+  "devDependencies": {
+    "husky": "0.14.3",
+    "prettier": "1.10.2"
+  }
+}
