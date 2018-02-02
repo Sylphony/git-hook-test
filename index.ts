@@ -3,10 +3,10 @@ interface ITest {
   num: number;
 }
 
-      // This code should be prettied
-      const testObj = {
-        str: "Hello",
-        num: 5
-      };
+// This code should be prettied
+const testObj = {
+  str: "Hello",
+  num: 5
+};
 
 console.log(testObj);
