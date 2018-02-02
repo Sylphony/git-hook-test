@@ -3,4 +3,5 @@ var testObj = {
     str: "Hello",
     num: 5
 };
-console.log(testObj);
+var testStr = "world I am";
+console.log(testObj, testStr);

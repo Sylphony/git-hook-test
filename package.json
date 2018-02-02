@@ -7,12 +7,12 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "precommit": "lint-staged"
+    "build": "tsc index.ts",
+    "precommit": "yarn run build && lint-staged"
   },
   "lint-staged": {
     "*.ts": [
-      "prettier --write", 
-      "tsc",
+      "prettier --write",
       "git add"
     ],
     "*.js": [
