@@ -9,6 +9,6 @@ const testObj: ITest = {
   num: 5
 };
 
-const testStr = "world I am";
+const testStr = "world";
 
 console.log(testObj, testStr);
