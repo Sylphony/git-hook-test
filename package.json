@@ -7,10 +7,14 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "pretty": "prettier index.js"
+    "pretty": "prettier index.ts",
+    "build": "tsc index.ts",
+    "precommit": "yarn run pretty",
+    "prepush": "yarn run build"
   },
   "devDependencies": {
     "husky": "0.14.3",
-    "prettier": "1.10.2"
+    "prettier": "1.10.2",
+    "typescript": "2.7.1"
   }
 }
