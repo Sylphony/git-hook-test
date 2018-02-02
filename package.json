@@ -9,11 +9,14 @@
   "scripts": {
     "pretty": "prettier index.ts",
     "build": "tsc index.ts",
-    "precommit": "yarn run pretty",
-    "prepush": "yarn run build"
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.ts": ["prettier --write", "git add"]
   },
   "devDependencies": {
     "husky": "0.14.3",
+    "lint-staged": "6.1.0",
     "prettier": "1.10.2",
     "typescript": "2.7.1"
   }
